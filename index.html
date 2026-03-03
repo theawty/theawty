@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>theawty | Car Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+
+<header>
+  <div class="logo">THEAWTY</div>
+  <nav>
+    <button onclick="setLang('ru')">RU</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ro')">RO</button>
+  </nav>
+</header>
+
+<section class="hero fade">
+  <h1 id="hero-title"></h1>
+  <p id="hero-subtitle"></p>
+</section>
+
+<section class="portfolio fade">
+  <h2 id="portfolio-title"></h2>
+  <div class="grid">
+  <a href="m2 12.jpg" onclick="openImg(this.href); return false;">
+    <img src="m2 12.jpg">
+  </a>
+  <a href="IMG_2442.JPG" onclick="openImg(this.href); return false;">
+    <img src="IMG_2442.JPG">
+  </a>
+  <a href="IMG_5031.JPG" onclick="openImg(this.href); return false;">
+    <img src="IMG_5031.JPG">
+  </a>
+  <a href="IMG_1720.JPG" onclick="openImg(this.href); return false;">
+    <img src="IMG_1720.JPG">
+  </a>
+  <a href="IMG_2730.JPG" onclick="openImg(this.href); return false;">
+    <img src="IMG_2730.JPG">
+  </a>
+  <a href="gt 11.jpg" onclick="openImg(this.href); return false;">
+    <img src="gt 11.jpg">
+  </a>
+  <a href="e60 11.jpg" onclick="openImg(this.href); return false;">
+    <img src="e60 11.jpg">
+  </a>
+  <a href="IMG_5683.JPG" onclick="openImg(this.href); return false;">
+    <img src="IMG_5683.JPG">
+  </a>
+  <a href="f80 1.jpg" onclick="openImg(this.href); return false;">
+    <img src="f80 1.jpg">
+  </a>
+
+  </div>
+</section>
+
+<section class="prices fade">
+  <h2 id="prices-title"></h2>
+
+  <div class="price-card">
+    <h3>Basic</h3>
+    <p id="price-basic"></p>
+  </div>
+
+  <div class="price-card">
+    <h3>Standart</h3>
+    <p id="price-standard"></p>
+  </div>
+
+  <div class="price-card">
+    <h3>Photos for sale</h3>
+    <p id="price-premium"></p>
+  </div>
+ <div class="order-button-wrapper">
+    <a href="https://www.instagram.com/theawty_cars/" target="_blank" class="btn-order">
+      Заказать съёмку
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="contacts fade">
+  <h2 id="contacts-title"></h2>
+  <p>INSTAGRAM: @theawty_cars</p>
+  <p>TELEGRAM: @agr3ssive</p>
+  <p>WHATSAPP: +40 786 188 560</p>
+</section>
+
+<!-- Fullscreen image -->
+<div id="lightbox" onclick="closeImg()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
